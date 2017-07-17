@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="32.16" viewBox="0 0 30 32.16">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -30,9 +30,16 @@
 <defs>
     <style>
       .cls-1 {
-        opacity: 0.3;
+        fill: #c84188;
+        fill-rule: evenodd;
+        filter: url(#filter);
       }
     </style>
+    <filter id="filter" x="1844" y="2972.84" width="30" height="32.16" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#974cad"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
   </defs>
-  <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-1" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhBxERJxXhtRGkAAAAmElEQVQoz4WRQQrCMBBFXzoKjc2+xZXXsCB4+dp7uIkXKCkYqKvQZFJwtu8zM2/G8MQws1JXy52tweAYaQ/wiMMIHwY6BjxR4Y6FWYj4KpLwi1WgimQYBFTklGMwamoA7I5Th9TliuVMYNq1G/6UFCMuBCI2N5Jig4WJdykt2ltLi/bWd5EKq4jwwCmcR3rhxvfw3RFPz/YDtEFOF0+JcJcAAAAASUVORK5CYII="/>
+  <path id="_4_" data-name="4 " class="cls-1" d="M1872,3005h-26a2.006,2.006,0,0,1-2-2v-22l26-8a1.937,1.937,0,0,1,1.25-.06,1.025,1.025,0,0,1,.75,1.06v7a2.006,2.006,0,0,1,2,2v20A2.006,2.006,0,0,1,1872,3005Zm-2-30-19.5,6H1870v-6Zm2,19v-1h-4v2h4v-1Zm-26-11h25a1,1,0,0,1,1,1v7h-5a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h5v5a1,1,0,0,1-1,1h-24a1,1,0,0,1-1-1v-19Z" transform="translate(-1844 -2972.84)"/>
 </svg>

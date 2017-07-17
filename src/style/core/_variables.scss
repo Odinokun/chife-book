@@ -1,17 +1,21 @@
 // ***** main colors *******
-$brand-color: #82d2e5;
+$brand-color: #662479;
 
 // ***** text colors *******
-$text-color: #3f3f3f;
-$title-color: #c42e2e;
-$link-color: $brand-color;
-$link-color-hov: #ffa600;
+$text-color: #000;
+$title-color: #662479;
+$link-color: #2f98cd;
+$link-color-hov: #662479;
 
 // ===== fonts =====
-$font:            'OpenSans', sans-serif;
-$font-bold:       'OpenSans-Bold', sans-serif;
-$font-light:      'OpenSans-Light', sans-serif;
-$font-semibold:   'OpenSans-Semibold', sans-serif;
+$font:            Roboto-Regular, sans-serif;
+$font-bold:       Roboto-Bold, sans-serif;
+$font-light:      Roboto-Light, sans-serif;
+$font-thin:       Roboto-Thin, sans-serif;
+
+$font-l:          Lato-Regular, sans-serif;
+$font-l-bold:     Lato-Bold, sans-serif;
+$font-l-black:    Lato-Black, sans-serif;
 
 // ===== sizes =====
 $radius-button: 5px;

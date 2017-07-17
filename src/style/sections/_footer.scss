@@ -1,1 +1,81 @@
+.footer {
+  background-color: #454545;
+  background-image: linear-gradient(to right, #652378 0%, #974cad 100%);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer-social {
+  display: flex;
+}
+.footer-social__item {
+  width: 40px;
+  height: 36px;
+  margin-right: 20px;
+  background-image: url('../img/social-sprite.png');
+  background-repeat: no-repeat;
+}
+.footer-social__item--up {
+  background-position: 0 50%;
+}
+.footer-social__item--hb {
+  background-position: -65px 50%;
+}
+.footer-social__item--yt {
+  width: 65px;
+  background-position: -133px 50%;
+}
+.footer-social__item--fb {
+  background-position: -225px 50%;
+}
+.footer-social__item--tw {
+  background-position: -293px 50%;
+}
 
+
+.footer-mail {
+  position: relative;
+  padding-left: 60px;
+  svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    fill: #c7a2d1;
+    width: 34px;
+    height: 26px;
+    margin: auto;
+  }
+  span {
+    font-size: 14px;
+    color: #fff;
+  }
+  a {
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 0;
+      height: 1px;
+      margin: auto;
+      content: '';
+      transition: width .5s;
+      background-color: #fff;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}

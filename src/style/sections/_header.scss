@@ -1,0 +1,130 @@
+// BEGIN бегущая строка
+.ticker {
+  padding: 15px 0 13px 0;
+  background-color: #efefef;
+}
+.ticker__viewport {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.ticker__list {
+  display: flex;
+}
+.ticker__item {
+  font-size: 13px;
+  margin: 0;
+  padding-right: 40px;
+  white-space: nowrap;
+  white-space: nowrap;
+  color: #000;
+  span {
+    font-size: 13px;
+    color: #939598;
+  }
+}
+// END бегущая строка
+
+// BEGIN управление полем поиска
+.header__search-controls {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: -45px;
+  width: 45px;
+  height: 45px;
+  background-color: #efefef;
+}
+.header__search-open,
+.header__search-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 45px;
+  height: 46px;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  svg {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    fill: #a7a7a7;
+    margin: auto;
+  }
+}
+.header__search-open {
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+.header__search-close {
+  display: none;
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+// END управление полем поиска
+
+// BEGIN поле поиска
+.header__search {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: -102px;
+  display: none;
+}
+.header__search-form {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 470px;
+  box-shadow: 0 2px 24px rgba(69, 17, 85, .3);
+}
+.header__search-input {
+  font-size: 13px;
+  width: 280px;
+  height: 56px;
+  padding: 10px 60px 10px 30px;
+  border: none;
+  color:#a3a3a3;
+}
+.header__search-submit--wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  &:hover {
+    .header__search-svg {
+      opacity: .8;
+    }
+  }
+}
+.header__search-submit {
+  width: 55px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+.header__search-svg {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  fill: $brand-color;
+  width: 18px;
+  height: 18px;
+  transition: opacity .5s;
+  pointer-events: none;
+}
+// END поле поиска

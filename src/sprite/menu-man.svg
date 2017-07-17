@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" viewBox="0 0 22 32">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -30,9 +30,16 @@
 <defs>
     <style>
       .cls-1 {
-        opacity: 0.3;
+        fill: #6a4c91;
+        fill-rule: evenodd;
+        filter: url(#filter);
       }
     </style>
+    <filter id="filter" x="1002" y="2972" width="22" height="32" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#974cad"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
   </defs>
-  <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-1" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhBxERJxXhtRGkAAAAmElEQVQoz4WRQQrCMBBFXzoKjc2+xZXXsCB4+dp7uIkXKCkYqKvQZFJwtu8zM2/G8MQws1JXy52tweAYaQ/wiMMIHwY6BjxR4Y6FWYj4KpLwi1WgimQYBFTklGMwamoA7I5Th9TliuVMYNq1G/6UFCMuBCI2N5Jig4WJdykt2ltLi/bWd5EKq4jwwCmcR3rhxvfw3RFPz/YDtEFOF0+JcJcAAAAASUVORK5CYII="/>
+  <path id="_6" data-name="6" class="cls-1" d="M1018,3004h-10a6,6,0,0,1-6-6v-4a5.979,5.979,0,0,1,4.05-5.65A10.638,10.638,0,0,1,1004,2982c0-5.52,4.03-10,9-10s9,4.48,9,10a10.638,10.638,0,0,1-2.05,6.35A5.979,5.979,0,0,1,1024,2994v4A6,6,0,0,1,1018,3004Zm2-22c0-4.42-3.13-8-7-8s-7,3.58-7,8,3.13,8,7,8S1020,2986.42,1020,2982Zm2,12.5a4.59,4.59,0,0,0-3.78-4.37,8.221,8.221,0,0,1-10.44,0,4.59,4.59,0,0,0-3.78,4.37v3a4.716,4.716,0,0,0,4.91,4.5h8.18a4.716,4.716,0,0,0,4.91-4.5v-3Z" transform="translate(-1002 -2972)"/>
 </svg>
