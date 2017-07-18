@@ -62,7 +62,7 @@ module.exports = function() {
   
   $('#burger label').on('click', function() {
     $('#menu').toggleClass('active');
-    $('body').toggleClass('no-scroll');
+    // $('body').toggleClass('no-scroll');
   });
   
   $('.menu__item').on('click', function() {
