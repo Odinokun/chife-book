@@ -5,10 +5,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    @include max(560) {
+      justify-content: center;
+    }
   }
 }
 .footer-social {
   display: flex;
+
+  @include max(560) {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 .footer-social__item {
   width: 40px;
@@ -17,6 +28,9 @@
   transition: opacity .5s;
   background-image: url('../img/social-sprite.png');
   background-repeat: no-repeat;
+  &:last-child {
+    margin-right: 0;
+  }
   &:hover {
     opacity: .8;
   }
@@ -43,6 +57,9 @@
   position: relative;
   padding-left: 60px;
   text-decoration: none;
+
+  @include max(560) {
+  }
   &:hover {
     svg {
       opacity: .8;

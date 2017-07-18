@@ -3,11 +3,22 @@
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include max(970) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 }
 .index__left,
 .index__right {
   width: calc(50% - 15px);
+
+  @include max(970) {
+    width: 100%;
+    max-width: 600px;
+  }
 }
 // BEGIN Левая секция главной страницы
 .video {
@@ -19,13 +30,23 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  @include max(970) {
+    margin-bottom: 30px;
+    height: 400px;
+  }
+  @include max(560) {
+    height: 250px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   &:hover {
     box-shadow: 0 2px 24px rgba(69, 17, 85, .3);
   }
   &.play {
     iframe {
-      opacity: 1;
       pointer-events: auto;
+      opacity: 1;
     }
   }
   iframe {
@@ -35,8 +56,8 @@
     width: 100%;
     height: 100%;
     transition: opacity .5s;
-    opacity: 0;
     pointer-events: none;
+    opacity: 0;
   }
 }
 .index__left-footer {
@@ -63,11 +84,19 @@
 .index__right {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .index__right-item {
   display: flex;
   flex-wrap: wrap;
   width: calc(50% - 15px);
+  @include max(560) {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
 }
 .index__right-item--1x1,
 .index__right-item--1x2 {
@@ -100,7 +129,7 @@
   left: 0;
   height: 130px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 20%;
   background-size: cover;
 }
 .index__right-title {

@@ -2,13 +2,21 @@
 .ticker {
   padding: 15px 0 13px 0;
   background-color: #efefef;
+
+  @include max(560) {
+    display: none;
+  }
 }
 .ticker__viewport {
   position: relative;
   overflow: hidden;
-  width: 97%;
+  width: 96.5%;
   max-width: 1110px;
   margin: 0 auto;
+
+  @include max(850) {
+    width: 94%;
+  }
 }
 .ticker__list {
   display: flex;
@@ -30,12 +38,20 @@
 // BEGIN управление полем поиска
 .header__search-controls {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   right: 15px;
-  bottom: -45px;
+  top: 100%;
   width: 45px;
   height: 45px;
   background-color: #efefef;
+  @include max(560) {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+  }
 }
 .header__search-open,
 .header__search-close {
@@ -59,6 +75,10 @@
     left: 0;
     fill: #a7a7a7;
     margin: auto;
+
+    @include max(560) {
+      top: 0;
+    }
   }
 }
 .header__search-open {
@@ -83,6 +103,13 @@
   right: 15px;
   bottom: -102px;
   display: none;
+
+  @include max(560) {
+    position: fixed;
+    z-index: 100;
+    top: 40px;
+    right: 10px;
+  }
 }
 .header__search-form {
   position: relative;

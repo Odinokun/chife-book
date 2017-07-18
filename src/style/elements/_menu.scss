@@ -2,6 +2,22 @@
   position: relative;
   z-index: 15;
   padding: 25px 0 0 0;
+
+  @include max(560) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    height: 40px;
+    padding-top: 40px;
+    transition: height .5s;
+    background-color: #ececec;
+    box-shadow: 0 0 14px rgba(69,17,85,.3);
+    &.active {
+      height: calc(100% + 100px);
+    }
+  }
 }
 .menu__list {
   display: flex;
@@ -9,11 +25,29 @@
   align-items: flex-end;
   margin: 0;
   padding: 0;
+
+  @include max(970) {
+    flex-wrap: wrap;
+  }
+  @include max(560) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
 }
 .menu__item {
   position: relative;
   padding-bottom: 15px;
   list-style: none;
+  @include max(560) {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
   &:hover {
     .submenu-list {
       pointer-events: auto;
@@ -25,12 +59,24 @@
   position: relative;
   width: 44%;
   padding-bottom: 17px;
+
+  @include max(970) {
+    width: 100%;
+    margin-bottom: 10px;
+
+    order: -1;
+  }
+  @include max(560) {
+    display: none;
+  }
   h1 {
     position: absolute;
     text-indent: -9999px;
   }
   img {
     display: block;
+    width: 90%;
+    max-width: 410px;
     margin: 0 auto;
   }
 }
@@ -40,6 +86,13 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
+
+  @include max(560) {
+    flex-direction: row;
+    background-color: #ececec;
+    position: relative;
+    z-index: 10;
+  }
   &:hover {
     span {
       color: $brand-color;
@@ -50,6 +103,10 @@
     max-width: 32px;
     max-height: 32px;
     margin-bottom: 10px;
+
+    @include max(560) {
+      margin: 0 20px 0 0;
+    }
   }
   span {
     font-family: $font-l-bold;
@@ -70,6 +127,20 @@
   pointer-events: none;
   opacity: 0;
   box-shadow: 0 2px 24px rgba(69, 17, 85, .3);
+
+  @include max(560) {
+    position: relative;
+    pointer-events: auto;
+    opacity: 1;
+    box-shadow: none;
+    transition: all .5s;
+
+margin-top: -100%;
+
+    &.active {
+      margin-top: 0;
+    }
+  }
 }
 .menu__item--left .submenu-list {
   left: 0;
@@ -91,6 +162,12 @@
   text-decoration: none;
   color: #000;
   background-color: #fff;
+
+  @include max(560) {
+    white-space: normal;
+    padding-left: 52px;
+    background-color: transparent;
+  }
   &:hover {
     color: #fff;
     background-color: $brand-color;

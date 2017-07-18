@@ -5,11 +5,19 @@
   top: 4px;
   left: 50px;
   letter-spacing: 1px;
-  color: #fafafa;
+  color: $brand-color;
 }
 .burger {
+  position: absolute;
+  top: 1px;
+  left: 15px;
+  display: none;
   width: 130px;
   height: 40px;
+
+  @include max(560) {
+    display: block !important;
+  }
 }
 .burger input {
   display: none;
@@ -27,12 +35,12 @@
 .burger input:checked + label:before {
   position: absolute;
   top: 50%;
-  width: 35px;
-  height: 3px;
+  width: 25px;
+  height: 2px;
   margin-top: -1px;
   content: '';
   border-radius: 2px;
-  background: #fafafa;
+  background: $brand-color;
 }
 .burger label:before {
   animation: animationOneReverse 1s ease forwards;
@@ -68,12 +76,12 @@
 .burger input:checked + label:after {
   position: absolute;
   top: 50%;
-  width: 35px;
-  height: 3px;
+  width: 25px;
+  height: 2px;
   margin-top: -1px;
   content: '';
   border-radius: 2px;
-  background: #fafafa;
+  background: $brand-color;
 }
 .burger label:after {
   animation: animationTwoReverse 1s ease forwards;
@@ -108,13 +116,13 @@
 /* Burger Icon */
 .burger label .burger__icon:before {
   position: absolute;
-  top: 7px;
-  width: 35px;
-  height: 3px;
+  top: 10px;
+  width: 25px;
+  height: 2px;
   content: '';
   animation: animationBurgerTopReverse 1s ease forwards;
   border-radius: 2px;
-  background: #fafafa;
+  background: $brand-color;
 }
 @keyframes animationBurgerTopReverse {
   0%,
@@ -151,13 +159,13 @@
 }
 .burger label .burger__icon:after {
   position: absolute;
-  bottom: 6px;
-  width: 35px;
-  height: 3px;
+  bottom: 10px;
+  width: 25px;
+  height: 2px;
   content: '';
   animation: animationBurgerBottomReverse 1s ease forwards;
   border-radius: 2px;
-  background: #fafafa;
+  background: $brand-color;
 }
 @keyframes animationBurgerBottomReverse {
   0%,
