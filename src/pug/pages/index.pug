@@ -7,12 +7,33 @@ block content
   include ../sections/header
   
   //begin content
-  section.main
-    //- .section#four(style="min-height:100vh; background-color:#bada55; padding-top: 00px;")
-    //-   .container
-    //- .section#two(style="min-height:100vh; background-color:#639;")
-    //- .section#three(style="min-height:100vh; background-color:#c0ffee;")
-    //- .section#one(style="min-height:100vh; background-color:#369;")
+  section.main.index
+    .container
+      .index__left.video(style="background-image: url('assets/img/bg-video.jpg')")
+        iframe(src='https://www.youtube.com/embed/dV9m5CN5Hho', frameborder='0', allowfullscreen='')
+        footer.index__left-footer
+          svg
+            use(xlink:href="assets/img/sprite.svg#triangle")
+          h3.video__title &#171;Майбутнє починається сьогодні&#187;
+
+      .index__right
+        .index__right-item
+          .index__right-item--1x1.top
+            .index__item-pic(style="background-image: url('assets/img/pic-01.jpg')")
+            h3.index__right-title «Минск» не работает, нужно переходить к Будапештскому формату переговоров
+            a(href="#").index__right-link
+          .index__right-item--1x1
+            .index__item-pic(style="background-image: url('assets/img/pic-02.jpg')")
+            h3.index__right-title «Минск» не работает, нужно переходить к Будапештскому формату переговоров
+            a(href="#").index__right-link
+
+        .index__right-item
+          .index__right-item--1x2
+            img(src="assets/img/news-book.jpg", alt="Книга")
+            h3.index__right-title-lg &#171;Майбутнє починається сьогодні&#187;
+            p.index__right-descr Презентация книги «Майбутрнє починається сьогодні» в Одессе - 15 мая, в Киеве 12 июня, в Днепре - 16 июня 
+              span (22.04.2017)
+            a(href="#").index__right-link
   //end   content
 
   include ../sections/footer

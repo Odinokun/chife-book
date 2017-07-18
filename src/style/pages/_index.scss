@@ -1,0 +1,136 @@
+.index {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+}
+.index__left,
+.index__right {
+  width: calc(50% - 15px);
+}
+// BEGIN Левая секция главной страницы
+.video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: box-shadow .5s;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  &:hover {
+    box-shadow: 0 2px 24px rgba(69, 17, 85, .3);
+  }
+  &.play {
+    iframe {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .5s;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.index__left-footer {
+  display: flex;
+  align-items: center;
+  padding: 30px 10px;
+  svg {
+    fill: #fff;
+    width: 27px;
+    height: 27px;
+    margin: 5px 30px 0 0;
+  }
+}
+.video__title {
+  font-family: $font-l-bold;
+  font-size: 24px;
+  line-height: 1.1;
+  margin: 0;
+  color: #fff;
+}
+// END Левая секция главной страницы
+
+// BEGIN Правая секция главной страницы
+.index__right {
+  display: flex;
+  justify-content: space-between;
+}
+.index__right-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(50% - 15px);
+}
+.index__right-item--1x1,
+.index__right-item--1x2 {
+  position: relative;
+  transition: box-shadow .5s;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-bottom: 4px solid #974cad;
+  &:hover {
+    box-shadow: 0 2px 24px rgba(69, 17, 85, .3);
+  }
+}
+.index__right-item--1x1.top {
+  margin-bottom: 30px;
+}
+.index__right-item--1x1 {
+  padding: 150px 25px 20px 25px;
+}
+.index__right-item--1x2 {
+  padding: 20px 25px;
+  img {
+    display: block;
+    margin: 10px auto 20px;
+  }
+}
+.index__item-pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.index__right-title {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.28;
+  margin: 0;
+}
+.index__right-title-lg {
+  font-family: $font-l-bold;
+  font-size: 24px;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+  color: #000;
+}
+.index__right-descr {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.28;
+  margin: 0;
+  color: #4c4c4c;
+  span {
+    color: #bdbfc0;
+  }
+}
+.index__right-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+// END Правая секция главной страницы

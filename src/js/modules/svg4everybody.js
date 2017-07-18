@@ -54,6 +54,11 @@ module.exports = function() {
     $('.header__search').fadeOut();
   });
 
+  
+  $('.video').on('click', function() {
+    $('.video').addClass('play');
+  });
+
   // end   SVG for IE
 
 };

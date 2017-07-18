@@ -6,7 +6,7 @@
 .ticker__viewport {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 97%;
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -31,7 +31,7 @@
 .header__search-controls {
   position: absolute;
   z-index: 10;
-  right: 0;
+  right: 15px;
   bottom: -45px;
   width: 45px;
   height: 45px;
@@ -80,7 +80,7 @@
 .header__search {
   position: absolute;
   z-index: 10;
-  right: 0;
+  right: 15px;
   bottom: -102px;
   display: none;
 }
@@ -96,8 +96,8 @@
   width: 280px;
   height: 56px;
   padding: 10px 60px 10px 30px;
+  color: #a3a3a3;
   border: none;
-  color:#a3a3a3;
 }
 .header__search-submit--wrap {
   position: absolute;

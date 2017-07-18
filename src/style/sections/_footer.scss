@@ -14,8 +14,12 @@
   width: 40px;
   height: 36px;
   margin-right: 20px;
+  transition: opacity .5s;
   background-image: url('../img/social-sprite.png');
   background-repeat: no-repeat;
+  &:hover {
+    opacity: .8;
+  }
 }
 .footer-social__item--up {
   background-position: 0 50%;
@@ -38,44 +42,30 @@
 .footer-mail {
   position: relative;
   padding-left: 60px;
+  text-decoration: none;
+  &:hover {
+    svg {
+      opacity: .8;
+    }
+  }
   svg {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 10px;
-    fill: #c7a2d1;
+    fill: #fff;
     width: 34px;
     height: 26px;
     margin: auto;
+    transition: opacity .5s;
   }
   span {
     font-size: 14px;
     color: #fff;
   }
-  a {
+  .footer-mail__link {
     font-size: 14px;
     font-weight: 600;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
     color: #fff;
-    &::before {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      width: 0;
-      height: 1px;
-      margin: auto;
-      content: '';
-      transition: width .5s;
-      background-color: #fff;
-    }
-    &:hover {
-      &::before {
-        width: 100%;
-      }
-    }
   }
 }
