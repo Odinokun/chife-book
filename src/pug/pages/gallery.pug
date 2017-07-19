@@ -1,0 +1,27 @@
+extends ../_template
+
+block variables
+  - var title = 'Название фотогалереи'
+  - var pageHeaderTitle = 'Название фотогалереи'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.gallery
+    include ../elements/pageHeader
+
+    .container.gallery__wrap
+      a(href="assets/img/gallery/gallery-01.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-01.jpg)").gallery__item
+      a(href="assets/img/gallery/gallery-02.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-02.jpg)").gallery__item
+      a(href="assets/img/gallery/gallery-03.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-03.jpg)").gallery__item
+      a(href="assets/img/gallery/gallery-04.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-04.jpg)").gallery__item
+      a(href="assets/img/gallery/gallery-05.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-05.jpg)").gallery__item
+      a(href="assets/img/gallery/gallery-06.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-06.jpg)").gallery__item
+      a(href="assets/img/gallery/gallery-07.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-07.jpg)").gallery__item
+      a(href="assets/img/gallery/gallery-08.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-08.jpg)").gallery__item
+      a(href="assets/img/gallery/gallery-09.jpg" data-fancybox="gallery" style="background-image:url(assets/img/gallery-thumb/gallery-thumb-09.jpg)").gallery__item
+
+  //end   content
+
+  include ../sections/footer

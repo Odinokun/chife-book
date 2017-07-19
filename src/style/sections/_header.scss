@@ -25,6 +25,7 @@
   font-size: 13px;
   margin: 0;
   padding-right: 40px;
+  cursor: pointer;
   white-space: nowrap;
   white-space: nowrap;
   color: #000;
@@ -39,11 +40,12 @@
 .header__search-controls {
   position: absolute;
   z-index: 10;
-  right: 15px;
   top: 100%;
+  right: 15px;
   width: 45px;
   height: 45px;
   background-color: #efefef;
+
   @include max(560) {
     position: fixed;
     top: 0;

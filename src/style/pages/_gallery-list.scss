@@ -14,7 +14,7 @@
   position: relative;
   width: 31.6%;
   margin-right: 2.6%;
-  margin-bottom: 2.4%;
+  margin-bottom: 26px;
   transition: box-shadow .5s;
   border-bottom: 4px solid #974cad;
   background-color: #fff;
@@ -22,7 +22,6 @@
   @include max(768) {
     width: 48%;
     margin-right: 0;
-    margin-bottom: 27px;
   }
   @include max(480) {
     width: 100%;

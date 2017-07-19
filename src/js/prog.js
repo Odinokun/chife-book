@@ -4,7 +4,9 @@
 $(document).ready(function ($) {
   pageWidget([
     'index',
-    'gallery-list'
+    'gallery',
+    'gallery-list',
+    'life'
     ]);
 });
 
