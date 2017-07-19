@@ -3,7 +3,8 @@
 // закоментить перед prodaction
 $(document).ready(function ($) {
   pageWidget([
-    'index'
+    'index',
+    'gallery-list'
     ]);
 });
 

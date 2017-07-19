@@ -5,9 +5,10 @@
 @import 'core/base';
 
 //elements
+@import 'elements/breadcrumbs';
 @import 'elements/burger';
 @import 'elements/menu';
-// @import 'elements/breadcrumbs';
+@import 'elements/pageHeader';
 // @import 'elements/pagination';
 // @import 'elements/popup';
 // @import 'elements/slickBase';
@@ -19,4 +20,4 @@
 
 //pages
 @import 'pages/index';
-@import 'pages/inner';
+@import 'pages/gallery-list';

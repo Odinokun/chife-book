@@ -1,0 +1,47 @@
+extends ../_template
+
+block variables
+  - var title = 'Фотогалереи'
+  - var pageHeaderTitle = 'Фотогалереи'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.gallery-list
+    include ../elements/pageHeader
+
+    .container.gallery-list__wrap
+      .gallery-list__item
+        .gallery-list__pic(style="background-image:url(assets/img/gallery-list-01.jpg)")
+        .gallery-list__text
+          h3.gallery-list__title В Україні створять комітети Громадянської Дії
+        a(href="#").gallery-list__link
+
+      .gallery-list__item
+        .gallery-list__pic(style="background-image:url(assets/img/gallery-list-02.jpg)")
+        .gallery-list__text
+          h3.gallery-list__title В Україні створять комітети Громадянської Дії
+        a(href="#").gallery-list__link
+        
+      .gallery-list__item
+        .gallery-list__pic(style="background-image:url(assets/img/gallery-list-03.jpg)")
+        .gallery-list__text
+          h3.gallery-list__title В Україні створять комітети Громадянської Дії
+        a(href="#").gallery-list__link
+
+      .gallery-list__item
+        .gallery-list__pic(style="background-image:url(assets/img/gallery-list-02.jpg)")
+        .gallery-list__text
+          h3.gallery-list__title В Україні створять комітети Громадянської Дії
+        a(href="#").gallery-list__link
+        
+      .gallery-list__item
+        .gallery-list__pic(style="background-image:url(assets/img/gallery-list-03.jpg)")
+        .gallery-list__text
+          h3.gallery-list__title В Україні створять комітети Громадянської Дії
+        a(href="#").gallery-list__link
+
+  //end   content
+
+  include ../sections/footer

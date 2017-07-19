@@ -1,0 +1,16 @@
+.page-header {
+  margin-bottom: -20px;
+
+  @include max(560) {
+    margin-top: 10px;
+  }
+  @include max(425) {
+    margin-top: 20px;
+  }
+}
+.page-header__title {
+  font-family: $font-l-black;
+  font-size: 30px;
+  margin: 10px 0;
+  color: #000;
+}
