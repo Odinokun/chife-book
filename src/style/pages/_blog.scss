@@ -1,0 +1,243 @@
+.blog {
+  background-color: #f0f0f0;
+}
+.blog-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+  @include max(970) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @include max(560) {
+    padding-bottom: 0;
+  }
+  &::before {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    background-color: #d8d8d8;
+  }
+}
+.blog__left,
+.blog__right {
+  width: calc(50% - 15px);
+
+  @include max(970) {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+// BEGIN Левая секция
+.blog__item-lg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 480px;
+  transition: box-shadow .5s;
+  background-repeat: no-repeat;
+  background-position: 50% -50px;
+  background-size: cover;
+
+  @include max(970) {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  @include max(560) {
+    max-width: 400px;
+    height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &:hover {
+    box-shadow: 0 2px 24px rgba(69, 17, 85, .3);
+  }
+}
+.blog__left-footer {
+  width: 100%;
+  padding: 30px 10px;
+  text-align: center;
+  background-color: #fff;
+}
+.blog__item-lg-title {
+  font-family: $font-l-bold;
+  font-size: 24px;
+  line-height: 1.1;
+  margin: 0;
+  color: #000;
+}
+// END Левая секция
+
+// BEGIN Правая секция
+.blog__right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog__right-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(50% - 15px);
+
+  @include max(560) {
+    width: 100%;
+    max-width: 400px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+  }
+}
+.blog__right-item--1x1 {
+  position: relative;
+  transition: box-shadow .5s;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-bottom: 4px solid #974cad;
+  &:hover {
+    box-shadow: 0 2px 24px rgba(69, 17, 85, .3);
+  }
+}
+.blog__right-item--1x1.top {
+  margin-bottom: 30px;
+}
+.blog__right-item--1x1 {
+  width: 100%;
+  padding: 150px 10px 20px 10px;
+}
+.blog__item-pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+}
+.blog__right-title {
+  font-family: $font-l-bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+.blog__right-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+// END Правая секция
+
+//BEGIN blog bottom
+.blog-bottom {
+  padding-top: 0;
+}
+.blog-bottom__item {
+  position: relative;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include max(660) {
+    display: block;
+  }
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    background-color: #d8d8d8;
+  }
+}
+.blog-bottom__pic {
+  width: 255px;
+  min-height: 145px;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+
+  @include max(660) {
+    float: left;
+    height: 145px;
+    margin: 0 30px 10px 0;
+  }
+  @include max(480) {
+    float: none;
+    margin: 0 0 10px 0;
+  }
+}
+.blog-bottom__right {
+  width: 100%;
+  padding-left: 40px;
+
+  @include max(660) {
+    padding-left: 0;
+  }
+}
+.blog-bottom__title {
+  font-family: $font-l-bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.blog-bottom__text {
+  font-family: $font-slab;
+  font-size: 14px;
+  line-height: 1.48;
+  margin-bottom: 10px;
+  color: #000;
+}
+.blog-bottom__date {
+  font-family: $font-slab;
+  font-size: 14px;
+  line-height: 1.48;
+  margin: 0;
+  color: #878688;
+}
+//END blog bottom
+
+//BEGIN pagination
+.pagination {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.pagination__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.pagination__item {
+  list-style: none;
+}
+.pagination__link {
+  font-family: $font-l;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  min-width: 30px;
+  margin: 0;
+  margin-right: 10px;
+  padding: 9px 2px;
+  transition: background-color .5s;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #ccc;
+  &:hover,
+  &.active {
+    color: #fff;
+    background-color: #974cad;
+  }
+}
+//END pagination

@@ -4,8 +4,10 @@
 $(document).ready(function ($) {
   pageWidget([
     'index',
+    'blog',
     'gallery',
     'gallery-list',
+    'family',
     'life'
     ]);
 });

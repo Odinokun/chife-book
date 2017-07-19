@@ -1,0 +1,32 @@
+.family {
+  background-color: #f0f0f0;
+}
+.family__header {
+  height: 400px;
+  background-image: url('../img/family-header.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  .breadcrumbs__link {
+    color: #b4b4b4;
+  }
+  .page-header__title {
+    color: #fff;
+  }
+}
+// .test {
+//   position: relative;
+//   background-color: #369;
+//   height: 500px;
+//   &::before {
+//     content: '';
+//     width: 480px;
+//     height: 370px;
+//     position: absolute;
+//     top: 0;
+//     right: -120px;
+//   background-image: url('../img/family-01.jpg');
+//   background-repeat: no-repeat;
+//   background-position: 50% 50%;
+//   }
+// }

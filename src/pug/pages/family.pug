@@ -1,0 +1,19 @@
+extends ../_template
+
+block variables
+  - var title = 'Мой род'
+  - var pageHeaderTitle = 'Мой род'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.family
+    .family__header
+      include ../elements/pageHeader
+
+    .container.test
+
+  //end   content
+
+  include ../sections/footer
