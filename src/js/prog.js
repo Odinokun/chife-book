@@ -10,7 +10,8 @@ $(document).ready(function ($) {
     'family',
     'help',
     'life',
-    'tezis'
+    'tezis',
+    'tezis-list'
     ]);
 });
 
@@ -34,3 +35,16 @@ function pageWidget(pages) {
 
 //====== Begin Programmer code ======
 
+function masonryFunc(){
+    var $container = $('.tezis-list__masonry');
+
+    $container.masonry({
+      columnWidth: '.grid-sizer',
+      itemSelector: '.tezis-list__item',
+      gutter: 30,
+      percentPosition: true,
+      horizontalOrder: true
+    });
+} 
+masonryFunc()
+setTimeout(masonryFunc,300)

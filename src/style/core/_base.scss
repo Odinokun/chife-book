@@ -66,6 +66,9 @@ h6 {
 }
 p {
   font-size: 15px;
+  strong {
+    font-family: $font-l-black;
+  }
 }
 a {
   transition: color .5s;

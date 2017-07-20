@@ -10,4 +10,7 @@ module.exports = [
 
   // include fancybox3
   './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+
+  // include masonry
+  './node_modules/masonry-layout/dist/masonry.pkgd.min.js',
 ];

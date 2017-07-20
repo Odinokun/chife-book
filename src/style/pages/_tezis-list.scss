@@ -1,0 +1,61 @@
+.tezis-list {
+  background-color: #f0f0f0;
+}
+.tezis-list__filter {
+  display: flex;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+.tezis-list__filter-btn {
+  font-family: $font-l-black;
+  font-size: 18px;
+  line-height: 48px;
+  height: 48px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 0 30px;
+  cursor: pointer;
+  transition: all .5s;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #cfcfcf;
+  @include max(768) {
+    padding: 0 15px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #662479;
+    box-shadow: 0 4px 6px rgba(46, 70, 120, .46);
+  }
+  &.active {
+    background-color: #974cad;
+    box-shadow: none;
+  }
+}
+
+.grid-sizer,
+.tezis-list__item {
+  width: 22.9%;
+  @include max(1090) {
+    width: 31.4%;
+  }
+  @include max(1047) {
+    width: 31%;
+  }
+  @include max(873) {
+    width: 48%;
+  }
+  @include max(755) {
+    width: 100%;
+  }
+}
+.tezis-list__item {
+  margin-bottom: 30px;
+  border-bottom: 4px solid #974cad;
+  padding: 25px;
+  background-color: #fff;
+}
