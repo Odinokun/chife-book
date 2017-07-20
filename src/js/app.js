@@ -33,10 +33,30 @@ $(function() {
   // end   Animate.css
 
   // begin Fancybox3
-  // require('./modules/fancybox')();
+  require('./modules/fancybox')();
   // end   Fancybox3
+
 
   /////
   // ***** END Standarts scripts *****
   /////
+
+
+
+  // begin mobile menu
+  require('./modules/mobileMenu')();
+  // end   mobile menu
+
+  // begin video
+  require('./modules/video')();
+  // end   video
+
+  // begin search
+  require('./modules/search')();
+  // end   search
+
+  // begin ticker
+  require('./modules/ticker')();
+  // end   ticker
+  
 });
