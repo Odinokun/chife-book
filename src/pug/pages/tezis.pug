@@ -1,0 +1,46 @@
+extends ../_template
+
+block variables
+  - var title = 'Тезис подробно'
+  - var pageHeaderTitle = 'Тезис подробно'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.tezis
+    include ../elements/pageHeaderCrop
+
+    .container
+      h2.tezis__title Можна з певністю сказати, що проведення судової реформи -
+      span.tezis__subtitle це лишень питання політичної волі та дійсного бажання забезпечити незалежність суддів.
+      .tezis__social
+        a(href="https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup" target="_blank" rel="nofollow noopener noreferrer").tezis__social-link.fb 
+          svg
+            use(xlink:href="assets/img/sprite.svg#fb")
+          |Поделиться
+        a(href="#" onclick="this.href='http://twitter.com/timeline/home?status='+document.title+'%20'+window.location.href+window.location.hash" target="_blank" rel="nofollow noopener noreferrer").tezis__social-link.twitter 
+          svg
+            use(xlink:href="assets/img/sprite.svg#twitter")
+          |Твитнуть
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").tezis__social-link.mail 
+          svg
+            use(xlink:href="assets/img/sprite.svg#mail")
+          |Отправить
+
+    .tezis__banner(style="background-image: url('assets/img/tezis-banner.jpg')")
+    
+    .container
+      article.tezis__article
+        .tezis__article-left
+          h2.tezis__title Національна безпека - це стан захищеності життєво важливих інтересів особистості, суспільства і держави, суспільних цінностей від зовнішніх та внутрішніх загроз.
+        .tezis__article-right
+          p У тоталітарній державі національна безпека розуміється передусім як безпека керівників держави - як від зовнішніх ворогів, так і від власних громадян. Головна відмінність національної безпеки у демократичній державі - це пріоритет захисту людини.
+          p
+            strong Нова доктрина національної безпеки в Україні має забезпечувати захист інтересів індивіда, громадянського суспільства, корпоративного сектора (виробників) та держави. З цього слід виділяти особисту, громадську, корпоративну та державну безпеку.
+          p Серед багатьох об'єктів захисту в системі національної безпеки, що підлягають особливому захисту в найближчі два десятиліття, ми визнаємо таке. Людина й особиста безпека: приватне життя і приватна власність, культура, здоров'я,природа та екологія, свобода віросповідання, свобода у виборі місця проживання та професії, свобода переміщення.
+          p Суспільство: свобода зібрань, свобода слова, свобода в організації та діяльності громадських організацій та партій, свобода від корупції, захист суспільної моралі, громадський порядок, захист культурних цінностей. Корпорації: захист приватної та корпоративної власності, захист комерційної таємниці, захист інтересів українських корпорацій на міжнародних ринках.
+          p Держава: безпека кордонів і територій, військова безпека, екологічна безпека, безпека ядерних об'єктів, безпека газових, нафтових та хімічних трубопроводів, захист від тероризму, економічна безпека держави.
+  //end   content
+
+  include ../sections/footer

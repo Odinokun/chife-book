@@ -1,0 +1,113 @@
+.tezis {
+  background-color: #f0f0f0;
+}
+.tezis__title {
+  font-family: $font-l-black;
+  font-size: 30px;
+  line-height: 1.24;
+  color: #000;
+
+  @include max(425) {
+    font-size: 26px;
+  }
+}
+.tezis__subtitle {
+  font-family: $font-l;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #000;
+}
+.tezis__social {
+  display: flex;
+  padding: 20px 0 15px 0;
+}
+.tezis__social-link {
+  font-family: $font-l;
+  font-size: 16px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin-right: 15px;
+  padding: 0 20px;
+  transition: all .5s;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+
+  @include max(560) {
+    padding: 0 15px;
+    text-indent: -9999px;
+    color: transparent;
+  }
+  &:hover {
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(46, 70, 120, .46);
+  }
+  &.fb {
+    background-color: #3b5a9b;
+    &:hover {
+      background-color: #2b4781;
+    }
+  }
+  &.twitter {
+    background-color: #41abe1;
+    &:hover {
+      background-color: #208fc8;
+    }
+  }
+  &.mail {
+    background-color: #974cad;
+    &:hover {
+      background-color: #662479;
+    }
+  }
+  svg {
+    fill: #fff;
+    max-width: 23px;
+    max-height: 23px;
+    margin-right: 10px;
+
+    @include max(560) {
+      margin-right: 0;
+    }
+  }
+}
+
+.tezis__banner {
+  height: 500px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include max(768) {
+    margin-bottom: 0;
+  }
+}
+.tezis__article {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+.tezis__article-left {
+  width: 40%;
+
+  @include max(768) {
+    width: 100%;
+  }
+}
+.tezis__article-right {
+  width: 60%;
+  padding-left: 30px;
+
+  @include max(768) {
+    width: 100%;
+    padding-left: 0;
+  }
+  strong {
+    font-family: $font-bold;
+  }
+}

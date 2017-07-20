@@ -9,7 +9,8 @@ $(document).ready(function ($) {
     'gallery-list',
     'family',
     'help',
-    'life'
+    'life',
+    'tezis'
     ]);
 });
 
