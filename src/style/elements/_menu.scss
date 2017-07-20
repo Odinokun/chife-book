@@ -4,8 +4,8 @@
   padding: 25px 0 0 0;
 
   @include max(560) {
-  z-index: 5;
     position: fixed;
+    z-index: 5;
     top: 0;
     right: 0;
     left: 0;
@@ -42,12 +42,13 @@
   position: relative;
   padding-bottom: 15px;
   list-style: none;
+
   @include max(560) {
-    width: 100%;
     overflow: hidden;
-    padding-bottom: 0;
-    padding-top: 0;
+    width: 100%;
     margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   &:hover {
     .submenu-list {
@@ -89,10 +90,10 @@
   text-decoration: none;
 
   @include max(560) {
-    flex-direction: row;
-    background-color: #ececec;
     position: relative;
     z-index: 10;
+    flex-direction: row;
+    background-color: #ececec;
   }
   &:hover {
     span {
@@ -131,13 +132,11 @@
 
   @include max(560) {
     position: relative;
+    margin-top: -100%;
+    transition: all .5s;
     pointer-events: auto;
     opacity: 1;
     box-shadow: none;
-    transition: all .5s;
-
-margin-top: -100%;
-
     &.active {
       margin-top: 0;
     }
@@ -165,8 +164,8 @@ margin-top: -100%;
   background-color: #fff;
 
   @include max(560) {
-    white-space: normal;
     padding-left: 52px;
+    white-space: normal;
     background-color: transparent;
   }
   &:hover {

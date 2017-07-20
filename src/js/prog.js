@@ -8,6 +8,7 @@ $(document).ready(function ($) {
     'gallery',
     'gallery-list',
     'family',
+    'help',
     'life'
     ]);
 });

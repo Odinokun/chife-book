@@ -1,0 +1,93 @@
+extends ../_template
+
+block variables
+  - var title = 'Поддержать'
+  - var pageHeaderTitle = 'Поддержать'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.help(style="background-image:url('assets/img/bg-help.jpg');")
+    include ../elements/pageHeaderCrop
+
+    .help-header__mobile
+
+    .container
+      .help__column
+        form.help__item
+          .help__steps-line
+            span.help__step.help__step-01.active 1. Сумма 
+            span.help__step.help__step-02 2. Контактные данные 
+            span.help__step.help__step-03 3. Оплата
+
+          .help__field.help__field-01.active
+            h3.help__title 
+              |Поддержать
+              br
+              |Инну Богословскую!
+            span.help__subtitle Выберите подходящую сумму взноса:
+            .help__cash-btn-wrap
+              label.help__cash-btn 
+                |1000
+                =" " 
+                span uah
+                input(type="radio" name="help" val="1000")
+              label.help__cash-btn 
+                |900 
+                =" "
+                span uah
+                input(type="radio" name="help" val="900")
+              label.help__cash-btn 
+                |800 
+                =" "
+                span uah
+                input(type="radio" name="help" val="800")
+              label.help__cash-btn 
+                |700 
+                =" "
+                span uah
+                input(type="radio" name="help" val="700")
+              label.help__cash-btn.active
+                |600 
+                =" "
+                span uah
+                input(type="radio" name="help" val="600" checked)
+              label.help__cash-btn 
+                |550 
+                =" "
+                span uah
+                input(type="radio" name="help" val="550")
+              label.help__cash-btn 
+                |500 
+                =" "
+                span uah
+                input(type="radio" name="help" val="500")
+
+              input.help__cash-btn-input(type="text" placeholder="сумма:")
+            span.help__cash-next.help__cash-next-01 Продолжить
+
+          .help__field.help__field-02
+            h3.help__title 
+              |Введите ваши
+              br
+              |данные
+            .help__input-wrap
+              input.help__input(type="text" placeholder="Имя*" required)
+              input.help__input(type="text" placeholder="Контактный телефон")
+              input.help__input(type="text" placeholder="Email")
+
+            span.help__cash-next.help__cash-next-02 Продолжить
+
+          .help__field.help__field-03
+            .help__liqpay
+              img(src="assets/img/liqpay.jpg", alt="pic")
+
+
+        .help__text
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis praesentium, nobis cumque, sapiente, maxime aut excepturi impedit fuga voluptatum perferendis aperiam quibusdam, hic eaque vero cum et officiis rem.
+
+
+  //end   content
+
+  include ../sections/footer

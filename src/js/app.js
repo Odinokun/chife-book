@@ -58,5 +58,9 @@ $(function() {
   // begin ticker
   require('./modules/ticker')();
   // end   ticker
-  
+
+  // begin pay form
+  require('./modules/payForm')();
+  // end   pay form
+
 });
