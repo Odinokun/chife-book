@@ -37,6 +37,7 @@
   border-radius: 3px;
   background-color: #fff;
   box-shadow: 2.5px 4.3px 27px rgba(2, 90, 134, .17);
+
   @include max(425) {
     padding: 30px 20px;
   }
@@ -44,6 +45,7 @@
 .help__steps-line {
   display: flex;
   margin-bottom: 30px;
+
   @include max(480) {
     flex-wrap: wrap;
   }
@@ -131,6 +133,13 @@
   text-transform: uppercase;
   color: #fff;
   background-color: #a5a5a5;
+
+  @include max(375) {
+    font-size: 13px;
+    span {
+      font-size: 9px;
+    }
+  }
   &:hover,
   &.active {
     background-color: #974cad;
@@ -153,8 +162,8 @@
   font-size: 18px;
   line-height: 64px;
   display: inline-block;
-  width: 100px;
-  min-width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 64px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -164,9 +173,6 @@
   border: none;
   border-radius: 3px;
   background-color: #974cad;
-  @include max(375) {
-    min-width: 250px;
-  }
   &.disabled {
     pointer-events: none;
     background-color: #a5a5a5;

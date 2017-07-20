@@ -5,7 +5,7 @@
   height: 400px;
   background-image: url('../img/family-header.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0;
   background-size: cover;
   .breadcrumbs__link {
     color: #b4b4b4;
@@ -14,19 +14,201 @@
     color: #fff;
   }
 }
-// .test {
-//   position: relative;
-//   background-color: #369;
-//   height: 500px;
-//   &::before {
-//     content: '';
-//     width: 480px;
-//     height: 370px;
-//     position: absolute;
-//     top: 0;
-//     right: -120px;
-//   background-image: url('../img/family-01.jpg');
-//   background-repeat: no-repeat;
-//   background-position: 50% 50%;
-//   }
-// }
+
+.family__top-block {
+  display: flex;
+  margin-top: -105px;
+  margin-bottom: 25px;
+  padding: 55px 60px 45px 60px;
+  border-radius: 3px;
+  background-color: #fff;
+
+  @include max(850) {
+    display: block;
+  }
+  @include max(560) {
+    padding: 35px 20px 25px 20px;
+  }
+}
+.family__top-block--left {
+  flex: 0 0 320px;
+  width: auto;
+}
+.family__top-block--right {
+  width: 100%;
+  padding-left: 50px;
+
+  @include max(850) {
+    padding-left: 0;
+  }
+}
+.family__title {
+  font-family: $font-l-black;
+  font-size: 36px;
+  line-height: 1.23;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #000;
+
+  @include max(560) {
+    font-size: 30px;
+  }
+  span {
+    color: #974cad;
+  }
+}
+
+.family__text {
+  overflow: hidden;
+  .container {
+    &::before {
+      position: absolute;
+      top: 17px;
+      right: calc(-100% + 350px);
+      display: block;
+      width: 100%;
+      height: 360px;
+      content: '';
+      background-image: url('../img/family-01.jpg');
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      background-size: cover;
+
+      @include max(1024) {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+.family__text--left {
+  width: 100%;
+  padding-right: 400px;
+
+  column-count: 2;
+  column-gap: 35px;
+  @include max(1024) {
+    padding-top: 380px;
+    padding-right: 0;
+  }
+  @include max(560) {
+    column-count: inherit;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+// BEGIN family tab
+.family__tab {
+  padding-bottom: 0;
+}
+.family__tab-btn {
+  font-family: $font-l-bold;
+  font-size: 18px;
+  line-height: 48px;
+  display: inline-block;
+  height: 48px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: background-color .5s;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #a5a5a5;
+  &:hover {
+    background-color: $brand-color;
+  }
+  &.active {
+    background-color: #974cad;
+  }
+}
+.family__tab-father,
+.family__tab-mother {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &.active {
+    display: flex;
+  }
+}
+.family__parents {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 55px 60px 45px 60px;
+  background-color: #fff;
+
+  @include max(850) {
+    display: block;
+  }
+  @include max(560) {
+    padding: 35px 20px 25px 20px;
+  }
+}
+.family__parents-left {
+  flex: 0 0 320px;
+  width: auto;
+}
+.family__parents--text {
+  width: 100%;
+  padding-left: 80px;
+
+  @include max(850) {
+    padding-left: 0;
+  }
+}
+.family__parents-title {
+  font-family: $font-l-black;
+  font-size: 36px;
+  line-height: 1.23;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+
+  @include max(560) {
+    font-size: 30px;
+  }
+  span {
+    color: #974cad;
+  }
+}
+.family__parents-subtitle {
+  font-family: $font-l-bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #000;
+}
+.family__grandparents {
+  width: 48.4%;
+  margin-bottom: 30px;
+  padding: 55px 60px 45px 60px;
+  background-color: #fff;
+
+  @include max(850) {
+    width: 100%;
+  }
+  @include max(560) {
+    padding: 35px 20px 25px 20px;
+  }
+}
+.family__grandparents-title {
+  font-family: $font-l-black;
+  font-size: 24px;
+  line-height: 1.23;
+  margin-bottom: 10px;
+  color: #000;
+  span {
+    color: #974cad;
+  }
+}
+.family__grandparents-subtitle {
+  font-family: $font-l-bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000;
+}
+// END family tab

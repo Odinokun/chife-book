@@ -63,4 +63,8 @@ $(function() {
   require('./modules/payForm')();
   // end   pay form
 
+  // begin tab in family page
+  require('./modules/tabFamily')();
+  // end   tab in family page
+
 });
