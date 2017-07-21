@@ -61,12 +61,12 @@
   }
   &::after {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 16px;
+    height: 16px;
     content: '';
-    border: 7px solid #eff0f0;
     border-radius: 50% ;
     background-color: #9447ab;
+    box-shadow: 0px 0px 0 7px #eff0f0;
   }
 }
 .life__title {
@@ -88,8 +88,8 @@
     right: -35px;
   }
   &::after {
-    top: 22px;
-    right: -65px;
+    top: 29px;
+    right: -58px;
   }
 }
 .life__item--right {
@@ -99,7 +99,7 @@
     left: -35px;
   }
   &::after {
-    top: 20px;
-    left: -65px;
+    top: 28px;
+    left: -58px;
   }
 }

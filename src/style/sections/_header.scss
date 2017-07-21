@@ -41,7 +41,7 @@
   position: absolute;
   z-index: 10;
   top: 100%;
-  right: 15px;
+  right: 78px;
   width: 45px;
   height: 45px;
   background-color: #efefef;
@@ -49,7 +49,7 @@
   @include max(560) {
     position: fixed;
     top: 0;
-    right: 10px;
+    right: 88px;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -71,16 +71,12 @@
   background-color: transparent;
   svg {
     position: absolute;
-    top: 3px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     fill: #a7a7a7;
     margin: auto;
-
-    @include max(560) {
-      top: 0;
-    }
   }
 }
 .header__search-open {
@@ -157,3 +153,27 @@
   pointer-events: none;
 }
 // END поле поиска
+
+// BEGIN смена языка сайта
+.header__lang {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  right: 15px;
+  width: 78px;
+  height: 45px;
+  .ui-selectmenu-button.ui-button {
+    border: none;
+    background-color: #efefef;
+  }
+  @include max(560) {
+    position: fixed;
+    top: 0;
+    display: block !important;
+    right: 10px;
+    height: 40px;
+    overflow: hidden;
+    background-color: transparent;
+  }
+}
+// END смена языка сайта

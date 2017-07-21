@@ -1,10 +1,12 @@
 //begin popup
-button.popup-open popup open
-.popup__layer
+.popup__wrap
   .popup
-    h3.popup__title Popup title
-    form.popup__form
-      input.popup__input(type="text" placeholder="Ваше имя")
-      input.popup__input(type="text" placeholder="Ваше имя")
-      button.popup__btn Кнопуля
+    .popup__close
+      svg
+        use(xlink:href="assets/img/sprite.svg#close")
+          
+    h3.popup__title Спасибо
+    h3.popup__subtitle Заявка с анкетой удачно отправлена
+    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nemo quod quibusdam consequuntur illum, amet quam iure quisquam minima provident soluta enim cumque vel earum accusantium ea culpa harum, asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nemo quod quibusdam consequuntur illum, amet quam iure quisquam minima provident soluta enim cumque vel earum accusantium ea culpa harum, asperiores!
+.popup__layer
 //end   popup

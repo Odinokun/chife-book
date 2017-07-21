@@ -96,15 +96,16 @@ block content
             h3.send__title 
               |Выберите способ доставки
             .send__radio-input-wrap
-              label
-                input(type="radio" name="delivery" value="new_post" data-pay="all" checked).delivery-radio
-                |по Украине в отделение новой почты
-              label
-                input(type="radio" name="delivery" value="kiev" data-pay="cash").delivery-radio
-                |по Киеву курьером
-              label
-                input(type="radio" name="delivery" value="world" data-pay="card").delivery-radio
-                |Доставка в другую страну
+              .radio
+                input(type="radio" id="new_post" name="delivery" value="new_post" data-pay="all" checked).delivery-radio
+                label(for="new_post") по Украине в отделение новой почты
+              .radio
+                input(type="radio" id="kiev" name="delivery" value="kiev" data-pay="cash").delivery-radio
+                label(for="kiev") по Киеву курьером
+              .radio
+                input(type="radio" id="world" name="delivery" value="world" data-pay="card").delivery-radio
+                label(for="world") Доставка в другую страну
+
             .send__input-wrap.new_post.active
               input.send__input(type="text" placeholder="Город*")
               input.send__input(type="text" placeholder="Отделение Новой почты*")
@@ -122,12 +123,13 @@ block content
             h3.send__title 
               |Выберите способ оплаты
             .send__radio-input-wrap
-              label.send__input-pay.all.cash.active
-                input(type="radio" name="pay" value="cash" checked)
-                |Оплата при получении
-              label.send__input-pay.all.card.active
-                input(type="radio" name="pay" value="card")
-                |Оплата карточкой
+              .radio.send__input-pay.all.cash.active
+                input(type="radio" id="cash" name="pay" value="cash" checked)
+                label(for="cash") Оплата при получении
+              .radio.send__input-pay.all.card.active
+                input(type="radio" id="card" name="pay" value="card")
+                label(for="card") Оплата карточкой
+
               span.ps После завершения заказа, наш менеджер свяжется с вами по указанным контактам, для уточнения способа и стоимости доставки.
             input(type="submit" value="Оформить заказ").send__cash-pay.send-btn.all.cash.active
             span.send__cash-next(data-send="04").send-btn.card Продолжить

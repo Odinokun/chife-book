@@ -27,40 +27,39 @@ block content
           |поддерживаете наши взгляды и убеждения, присоединяйтесь!
 
       form.connect__form
-        .connect__form-row.connect__form-row-left
-          label
-            |Мужчина
-            input(type="radio" name="gender" value="мужчина" checked)
-          label
-            |Женщина
-            input(type="radio" name="gender" value="женщина")
+        .radio
+          input(type="radio" id="gender-1" name="gender" value="мужчина" checked)
+          label(for="gender-1") Мужчина
+        .radio
+          input(type="radio" id="gender-2" name="gender" value="женщина")
+          label(for="gender-2") Женщина
 
         .connect__form-row
-          input(type="text" placeholder="Имя").f-2
-          input(type="text" placeholder="Фамилия").f-2
+          input(type="text" placeholder="Имя")
+          input(type="text" placeholder="Фамилия")
 
         .connect__form-row
-          input(type="text" placeholder="Почтовый адрес").f-1
+          input(type="text" placeholder="Почтовый адрес")
 
         .connect__form-row
-          select.selectmenu.f-3
+          select.selectmenu
             option Страна
             option Украина
             option Германия
             option Канада
-          input(type="text" placeholder="Индекс").f-3
-          select.selectmenu.f-3
+          input(type="text" placeholder="Индекс")
+          select.selectmenu
             option Город
             option Киев
             option Мюнхен
             option Квебек
         
         .connect__form-row-half.connect-row__title.connect-row__title-email
-          input(type="text" placeholder="E-mail").f-1
+          input(type="text" placeholder="E-mail")
         
         .connect__form-row-half.connect-row__title
           .connect-row__title-text Дата рождения
-          select.selectmenu.f-3
+          select.selectmenu
             option День
             option 01
             option 02
@@ -81,7 +80,7 @@ block content
             option 03
             option 03
             option 03
-          select.selectmenu.f-3
+          select.selectmenu
             option Месяц
             option Январь
             option Февраль
@@ -90,7 +89,7 @@ block content
             option Май
             option Июнь
             option Июль
-          select.selectmenu.f-3
+          select.selectmenu
             option Год
             option 1970
             option 1980
@@ -99,39 +98,39 @@ block content
         
         .connect__form-row-half.connect-row__title
           .connect-row__title-text Телефон
-          select.selectmenu.f-2
+          select.selectmenu
             option Украина (+38)
             option Канада (+38)
           input(type="text" placeholder="Телефон").f-2
         
         .connect__form-row-half.connect-row__title
           .connect-row__title-text Профессия
-          select.selectmenu.f-1
+          select.selectmenu
             option Почтовый адрес 1
             option Почтовый адрес 2
             option Почтовый адрес 3
 
-        .connect__form-row.connect__form-row-agree
-          label
+        .checkbox
+          input(type="checkbox" id="agree" checked)
+          label(for="agree")
             span
               | Да я согласен с
               =" "
               a(href="#") правилами устава
               =" "
               |и на обработку персональных данных
-            input(type="checkbox" checked)
 
-        .connect__form-row.connect__form-row-agree
-          label
+        .checkbox
+          input(type="checkbox" id="spam")
+          label(for="spam")
             span Получать новости на почту
-            input(type="checkbox")
 
-        .connect__form-row.connect__form-row-agree
-          label
+        .checkbox
+          input(type="checkbox" id="r2d2")
+          label(for="r2d2")
             span Я не робот
-            input(type="checkbox")
 
-        input(type="submit" value="Отправить").connect-form__submit
+        input(type="submit" value="Отправить").connect-form__submit.popup-open
       
       .connect__bottom
         p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti recusandae repellat sed inventore id minus magnam quis, nisi sint, vel. Officiis libero ullam illum atque distinctio nostrum sunt explicabo natus, dignissimos qui assumenda autem. Ut optio quasi, aperiam reprehenderit aut nisi, harum quia, nihil et accusamus dolores iste delectus maiores.

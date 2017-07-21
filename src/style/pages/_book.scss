@@ -4,10 +4,12 @@
 .book__top-section {
   position: relative;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   padding-bottom: 45px;
 
+  @include max(970) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   @include max(660) {
     padding-bottom: 0;
   }
