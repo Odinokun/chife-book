@@ -5,6 +5,7 @@ $(document).ready(function ($) {
   pageWidget([
     'index',
     'blog',
+    'book',
     'connect',
     'gallery',
     'gallery-list',

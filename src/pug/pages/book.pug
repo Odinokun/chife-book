@@ -1,0 +1,155 @@
+extends ../_template
+
+block variables
+  - var title = 'Книга'
+  - var pageHeaderTitle = 'Книга'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.book
+    include ../elements/pageHeaderCrop
+
+    .container.book__top-section
+      .book__top-section--left
+        .book__pic
+          img(src="assets/img/book.jpg", alt="Книга")
+        .book__descr
+          span 
+          |Удивительная книга
+          br
+          |о жизни и опыте удивительного человека
+          h4.book__descr--highlight Обязательно к прочтению!
+
+      .book__top-section--right
+        form.send__form
+          .send__steps-line
+            span.send__step.send__step-01.active 1. Сумма 
+            span.send__step.send__step-02 2. Контактные данные 
+            span.send__step.send__step-03 3. Способ доставки и оплаты
+
+          // BEGIN field 01
+          .send__field.send__field-01.active
+            h3.send__title 
+              |Купить книгу
+              br
+              |"Будущее начинается сегодня"
+              br
+            span.send__subtitle Выберите подходящую сумму взноса:
+            .send__cash-btn-wrap
+              label.send__cash-btn 
+                |1000
+                =" " 
+                span uah
+                input(type="radio" name="send" val="1000")
+              label.send__cash-btn 
+                |900 
+                =" "
+                span uah
+                input(type="radio" name="send" val="900")
+              label.send__cash-btn 
+                |800 
+                =" "
+                span uah
+                input(type="radio" name="send" val="800")
+              label.send__cash-btn 
+                |700 
+                =" "
+                span uah
+                input(type="radio" name="send" val="700")
+              label.send__cash-btn.active
+                |600 
+                =" "
+                span uah
+                input(type="radio" name="send" val="600" checked)
+              label.send__cash-btn 
+                |550 
+                =" "
+                span uah
+                input(type="radio" name="send" val="550")
+              label.send__cash-btn 
+                |500 
+                =" "
+                span uah
+                input(type="radio" name="send" val="500")
+
+              input.send__cash-btn-input(type="text" placeholder="сумма:")
+            span.send__cash-next(data-send="02") Купить книгу
+          // END field 01
+
+          // BEGIN field 02
+          .send__field.send__field-02
+            h3.send__title 
+              |Введите ваши данные
+            .send__input-wrap
+              input.send__input(type="text" placeholder="Имя*" required)
+              input.send__input(type="text" placeholder="Фамилия")
+              input.send__input(type="text" placeholder="Контактный телефон")
+              input.send__input(type="text" placeholder="Email")
+
+            span.send__cash-next(data-send="03") Продолжить
+          // END field 02
+
+          // BEGIN field 03
+          .send__field.send__field-03
+            h3.send__title 
+              |Выберите способ доставки
+            .send__radio-input-wrap
+              label
+                input(type="radio" name="delivery" value="new_post" data-pay="all" checked).delivery-radio
+                |по Украине в отделение новой почты
+              label
+                input(type="radio" name="delivery" value="kiev" data-pay="cash").delivery-radio
+                |по Киеву курьером
+              label
+                input(type="radio" name="delivery" value="world" data-pay="card").delivery-radio
+                |Доставка в другую страну
+            .send__input-wrap.new_post.active
+              input.send__input(type="text" placeholder="Город*")
+              input.send__input(type="text" placeholder="Отделение Новой почты*")
+            .send__input-wrap.kiev
+              input.send__input(type="text" placeholder="Улица")
+              input.send__input(type="text" placeholder="Дом").w50
+              input.send__input(type="text" placeholder="Квартира").w50
+            .send__input-wrap.world
+              input.send__input(type="text" placeholder="Страна").w70
+              input.send__input(type="text" placeholder="Индекс").w30
+              input.send__input(type="text" placeholder="Улица")
+              input.send__input(type="text" placeholder="Дом").w50
+              input.send__input(type="text" placeholder="Квартира").w50
+
+            h3.send__title 
+              |Выберите способ оплаты
+            .send__radio-input-wrap
+              label.send__input-pay.all.cash.active
+                input(type="radio" name="pay" value="cash" checked)
+                |Оплата при получении
+              label.send__input-pay.all.card.active
+                input(type="radio" name="pay" value="card")
+                |Оплата карточкой
+              span.ps После завершения заказа, наш менеджер свяжется с вами по указанным контактам, для уточнения способа и стоимости доставки.
+            input(type="submit" value="Оформить заказ").send__cash-pay.send-btn.all.cash.active
+            span.send__cash-next(data-send="04").send-btn.card Продолжить
+          // END field 03
+
+          // BEGIN field 04
+          .send__field.send__field-04
+            .send__liqpay
+              img(src="assets/img/liqpay.jpg", alt="pic")
+          // END field 04
+
+
+    .container.book__text-section
+      p Серед багатьох об'єктів захисту в системі національної безпеки, що підлягають особливому захисту в найближчі два десятиліття, ми визнаємо таке. Людина й особиста безпека: приватне життя і приватна власність, культура, здоров'я,природа та екологія, свобода віросповідання, свобода у виборі місця проживання та професії, свобода переміщення.
+      p Суспільство: свобода зібрань, свобода слова, свобода в організації та діяльності громадських організацій та партій, свобода від корупції, захист суспільної моралі, громадський порядок, захист культурних цінностей. Корпорації: захист власності, захист комерційної таємниці, захист інтересів українських корпорацій на міжнародних ринках.
+      p Держава: безпека кордонів і територій, військова безпека, екологічна безпека, безпека ядерних об'єктів, безпека газових, нафтових та хімічних трубопроводів, захист від тероризму, економічна безпека держави.
+      p Серед багатьох об'єктів захисту в системі національної безпеки, що підлягають особливому захисту в найближчі два десятиліття, ми визнаємо таке. Людина й особиста безпека: приватне життя і приватна власність, культура, здоров'я,природа та екологія, свобода віросповідання, свобода у виборі місця проживання та професії, свобода переміщення.
+      p Суспільство: свобода зібрань, свобода слова, свобода в організації та діяльності громадських організацій та партій, свобода від корупції, захист суспільної моралі, громадський порядок, захист культурних цінностей. Корпорації: захист приватної та корпоративної власності, захист комерційної таємниці, захист інтересів українських корпорацій на міжнародних ринках.
+
+
+
+
+  //end   content
+
+  include ../sections/footer

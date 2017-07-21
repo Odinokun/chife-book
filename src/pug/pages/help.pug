@@ -15,73 +15,79 @@ block content
 
     .container
       .help__column
-        form.help__item
-          .help__steps-line
-            span.help__step.help__step-01.active 1. Сумма 
-            span.help__step.help__step-02 2. Контактные данные 
-            span.help__step.help__step-03 3. Оплата
-
-          .help__field.help__field-01.active
-            h3.help__title 
+        form.send__form
+          .send__steps-line
+            span.send__step.send__step-01.active 1. Сумма 
+            span.send__step.send__step-02 2. Контактные данные 
+            span.send__step.send__step-03 3. Оплата
+          
+          // BEGIN field 01
+          .send__field.send__field-01.active
+            h3.send__title 
               |Поддержать
               br
               |Инну Богословскую!
-            span.help__subtitle Выберите подходящую сумму взноса:
-            .help__cash-btn-wrap
-              label.help__cash-btn 
+            span.send__subtitle Выберите подходящую сумму взноса:
+            .send__cash-btn-wrap
+              label.send__cash-btn 
                 |1000
                 =" " 
                 span uah
-                input(type="radio" name="help" val="1000")
-              label.help__cash-btn 
+                input(type="radio" name="send" val="1000")
+              label.send__cash-btn 
                 |900 
                 =" "
                 span uah
-                input(type="radio" name="help" val="900")
-              label.help__cash-btn 
+                input(type="radio" name="send" val="900")
+              label.send__cash-btn 
                 |800 
                 =" "
                 span uah
-                input(type="radio" name="help" val="800")
-              label.help__cash-btn 
+                input(type="radio" name="send" val="800")
+              label.send__cash-btn 
                 |700 
                 =" "
                 span uah
-                input(type="radio" name="help" val="700")
-              label.help__cash-btn.active
+                input(type="radio" name="send" val="700")
+              label.send__cash-btn.active
                 |600 
                 =" "
                 span uah
-                input(type="radio" name="help" val="600" checked)
-              label.help__cash-btn 
+                input(type="radio" name="send" val="600" checked)
+              label.send__cash-btn 
                 |550 
                 =" "
                 span uah
-                input(type="radio" name="help" val="550")
-              label.help__cash-btn 
+                input(type="radio" name="send" val="550")
+              label.send__cash-btn 
                 |500 
                 =" "
                 span uah
-                input(type="radio" name="help" val="500")
+                input(type="radio" name="send" val="500")
 
-              input.help__cash-btn-input(type="text" placeholder="сумма:")
-            span.help__cash-next.help__cash-next-01 Продолжить
+              input.send__cash-btn-input(type="text" placeholder="сумма:")
+            span.send__cash-next(data-send="02") Продолжить
+          // END field 01
 
-          .help__field.help__field-02
-            h3.help__title 
+          // BEGIN field 02
+          .send__field.send__field-02
+            h3.send__title 
               |Введите ваши
               br
               |данные
-            .help__input-wrap
-              input.help__input(type="text" placeholder="Имя*" required)
-              input.help__input(type="text" placeholder="Контактный телефон")
-              input.help__input(type="text" placeholder="Email")
+            .send__input-wrap
+              input.send__input(type="text" placeholder="Имя*" required)
+              input.send__input(type="text" placeholder="Контактный телефон")
+              input.send__input(type="text" placeholder="Email")
 
-            span.help__cash-next.help__cash-next-02 Продолжить
+            span.send__cash-next(data-send="04") Продолжить
+          // END field 02
 
-          .help__field.help__field-03
-            .help__liqpay
+          // BEGIN field 03
+          .send__field.send__field-04
+            .send__liqpay
               img(src="assets/img/liqpay.jpg", alt="pic")
+          // END field 04
 
 
         .help__text
