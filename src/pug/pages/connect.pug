@@ -1,0 +1,140 @@
+extends ../_template
+
+block variables
+  - var title = 'Присоединяйтесь'
+  - var pageHeaderTitle = 'Присоединяйтесь'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.connect
+    .connect__header(style="background-image: url('assets/img/connect-header.jpg');")
+      include ../elements/pageHeaderCrop
+      .connect__top-title--wrap
+        h2.connect__top-title
+          |Присоединяйтесь
+        br
+        h2.connect__top-title
+          |к нашему проекту
+
+    .container.connect-form__container
+      header.connect__top
+        h3.connect__title Это займет не более 3 минут.
+        span.connect__subtitle
+          |Если Вы, так же как и мы, верите, что Украину можно изменить,
+          br
+          |поддерживаете наши взгляды и убеждения, присоединяйтесь!
+
+      form.connect__form
+        .connect__form-row.connect__form-row-left
+          label
+            |Мужчина
+            input(type="radio" name="gender" value="мужчина" checked)
+          label
+            |Женщина
+            input(type="radio" name="gender" value="женщина")
+
+        .connect__form-row
+          input(type="text" placeholder="Имя").f-2
+          input(type="text" placeholder="Фамилия").f-2
+
+        .connect__form-row
+          input(type="text" placeholder="Почтовый адрес").f-1
+
+        .connect__form-row
+          select.selectmenu.f-3
+            option Страна
+            option Украина
+            option Германия
+            option Канада
+          input(type="text" placeholder="Индекс").f-3
+          select.selectmenu.f-3
+            option Город
+            option Киев
+            option Мюнхен
+            option Квебек
+        
+        .connect__form-row-half.connect-row__title.connect-row__title-email
+          input(type="text" placeholder="E-mail").f-1
+        
+        .connect__form-row-half.connect-row__title
+          .connect-row__title-text Дата рождения
+          select.selectmenu.f-3
+            option День
+            option 01
+            option 02
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+            option 03
+          select.selectmenu.f-3
+            option Месяц
+            option Январь
+            option Февраль
+            option Март
+            option Апрель
+            option Май
+            option Июнь
+            option Июль
+          select.selectmenu.f-3
+            option Год
+            option 1970
+            option 1980
+            option 1990
+            option 2000
+        
+        .connect__form-row-half.connect-row__title
+          .connect-row__title-text Телефон
+          select.selectmenu.f-2
+            option Украина (+38)
+            option Канада (+38)
+          input(type="text" placeholder="Телефон").f-2
+        
+        .connect__form-row-half.connect-row__title
+          .connect-row__title-text Профессия
+          select.selectmenu.f-1
+            option Почтовый адрес 1
+            option Почтовый адрес 2
+            option Почтовый адрес 3
+
+        .connect__form-row.connect__form-row-agree
+          label
+            span
+              | Да я согласен с
+              =" "
+              a(href="#") правилами устава
+              =" "
+              |и на обработку персональных данных
+            input(type="checkbox" checked)
+
+        .connect__form-row.connect__form-row-agree
+          label
+            span Получать новости на почту
+            input(type="checkbox")
+
+        .connect__form-row.connect__form-row-agree
+          label
+            span Я не робот
+            input(type="checkbox")
+
+        input(type="submit" value="Отправить").connect-form__submit
+      
+      .connect__bottom
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti recusandae repellat sed inventore id minus magnam quis, nisi sint, vel. Officiis libero ullam illum atque distinctio nostrum sunt explicabo natus, dignissimos qui assumenda autem. Ut optio quasi, aperiam reprehenderit aut nisi, harum quia, nihil et accusamus dolores iste delectus maiores.
+  //end   content
+
+  include ../sections/footer

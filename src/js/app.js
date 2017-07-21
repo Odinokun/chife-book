@@ -67,4 +67,12 @@ $(function() {
   require('./modules/tabFamily')();
   // end   tab in family page
 
+  // begin masonry gallery
+  require('./modules/masonry')();
+  // end   masonry gallery
+
+  // begin jqueryUI
+  require('./modules/jqueryUI')();
+  // end   jqueryUI
+
 });

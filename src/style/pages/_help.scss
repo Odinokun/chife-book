@@ -129,7 +129,7 @@
   font-family: $font-l-bold;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color .5s;
+  transition: all .5s;
   text-transform: uppercase;
   color: #fff;
   background-color: #a5a5a5;
@@ -140,9 +140,16 @@
       font-size: 9px;
     }
   }
-  &:hover,
   &.active {
     background-color: #974cad;
+    &:hover {
+      background-color: #974cad;
+      box-shadow: none;
+    }
+  }
+  &:hover {
+    background-color: #662479;
+    box-shadow: 0 4px 6px rgba(69, 17, 85, .51);
   }
   span {
     font-family: $font-l-bold;
@@ -167,6 +174,7 @@
   height: 64px;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: all .5s;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -176,6 +184,10 @@
   &.disabled {
     pointer-events: none;
     background-color: #a5a5a5;
+  }
+  &:hover {
+    background-color: #662479;
+    box-shadow: 0 4px 6px rgba(69, 17, 85, .51);
   }
 }
 

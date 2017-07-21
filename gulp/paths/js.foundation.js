@@ -13,4 +13,7 @@ module.exports = [
 
   // include masonry
   './node_modules/masonry-layout/dist/masonry.pkgd.min.js',
+
+  // include jquery ui
+  './src/vendors/jquery-ui/jquery-ui.min.js',
 ];

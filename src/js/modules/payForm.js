@@ -1,7 +1,7 @@
 module.exports = function() {
 
   // begin PayForm
-  
+
   // делаем активной кнопку взноса
   $('.help__cash-btn input').on('click', function() {
       if ($('input[name="help"]').is(':checked')) {
@@ -26,7 +26,6 @@ module.exports = function() {
       $('.help__field-03, .help__step-03').addClass('active');
     }
   });
-
   // end   PayForm
 
 };
