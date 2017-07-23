@@ -41,7 +41,7 @@
   position: absolute;
   z-index: 10;
   top: 100%;
-  right: 78px;
+  right: 73px;
   width: 45px;
   height: 45px;
   background-color: #efefef;
@@ -159,21 +159,33 @@
   position: absolute;
   z-index: 10;
   top: 100%;
-  right: 15px;
+  right: 5px;
   width: 78px;
-  height: 45px;
-  .ui-selectmenu-button.ui-button {
-    border: none;
-    background-color: #efefef;
-  }
+  height: 43px;
+  padding-top: 2px;
+
   @include max(560) {
     position: fixed;
     top: 0;
-    display: block !important;
     right: 10px;
-    height: 40px;
+    display: block !important;
     overflow: hidden;
+    height: 40px;
     background-color: transparent;
+  }
+  .ui-selectmenu-button.ui-button {
+    color: #000;
+    border: none;
+    background-color: #efefef;
+    &::before {
+      right: 15px;
+      width: 10px;
+      height: 0;
+      border-top: 6px solid #000;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      background: none;
+    }
   }
 }
 // END смена языка сайта

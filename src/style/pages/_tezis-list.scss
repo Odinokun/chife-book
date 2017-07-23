@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 .tezis-list__filter-btn {
-  font-family: $font-l-black;
+  font-family: $font-l;
   font-size: 18px;
   line-height: 48px;
   height: 48px;
@@ -29,7 +29,6 @@
   &:hover {
     color: #fff;
     background-color: #662479;
-    box-shadow: 0 4px 6px rgba(46, 70, 120, .46);
   }
   &.active {
     background-color: #974cad;

@@ -6,6 +6,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 19px;
+    padding-bottom: 19px;
 
     @include max(560) {
       justify-content: center;
@@ -62,7 +64,7 @@
   }
   &:hover {
     svg {
-      opacity: .8;
+      opacity: 1;
     }
   }
   svg {
@@ -75,12 +77,14 @@
     height: 26px;
     margin: auto;
     transition: opacity .5s;
+    opacity: .5;
   }
   span {
     font-size: 14px;
     color: #fff;
   }
   .footer-mail__link {
+    font-family: $font-bold;
     font-size: 14px;
     font-weight: 600;
     color: #fff;

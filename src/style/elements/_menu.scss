@@ -36,6 +36,9 @@
     width: 150px;
     margin: 0 auto;
     padding-top: 20px;
+
+    // background-color: #987;
+    width: 100%;
   }
 }
 .menu__item {
@@ -46,9 +49,13 @@
   @include max(560) {
     overflow: hidden;
     width: 100%;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     padding-top: 0;
     padding-bottom: 0;
+
+    // background-color: #563;
+    min-height: 56px;
+    border-bottom: 1px solid #fff;
   }
   &:hover {
     .submenu-list {
@@ -60,7 +67,7 @@
 .menu__item--logo {
   position: relative;
   width: 44%;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
 
   @include max(970) {
     width: 100%;
@@ -75,10 +82,11 @@
     position: absolute;
     text-indent: -9999px;
   }
-  img {
+  svg {
     display: block;
+    fill: #662479;
     width: 90%;
-    max-width: 410px;
+    max-height: 70px;
     margin: 0 auto;
   }
 }
@@ -94,14 +102,21 @@
     z-index: 10;
     flex-direction: row;
     background-color: #ececec;
+transition: all .5s;
+    padding-left: 50px;
+    min-height: 56px;
   }
   &:hover {
+  @include max(560) {
+    background-color: #fff;
+  }
     span {
       color: $brand-color;
     }
   }
   svg {
-    fill: $brand-color;
+    overflow: visible;
+    fill: #974cad;
     max-width: 32px;
     max-height: 32px;
     margin-bottom: 10px;
@@ -164,9 +179,10 @@
   background-color: #fff;
 
   @include max(560) {
-    padding-left: 52px;
+    padding-left: 102px;
     white-space: normal;
     background-color: transparent;
+    border-top: 1px solid #fff;
   }
   &:hover {
     color: #fff;

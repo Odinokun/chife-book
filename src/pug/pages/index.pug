@@ -5,9 +5,10 @@ block variables
 
 block content
   include ../sections/header
-  
+
   //begin content
   section.main.index
+    include ../elements/mobileLogo
     .container.index__wrap
       .index__left.video(style="background-image: url('assets/img/bg-video.jpg')")
         iframe(src='https://www.youtube.com/embed/dV9m5CN5Hho?rel=0', frameborder='0', allowfullscreen='')
@@ -19,17 +20,19 @@ block content
 
       .index__right
         .index__right-item
-          .index__right-item--1x1.top
+          .index__right-item--1x1.top.grey-border
             .index__item-pic(style="background-image: url('assets/img/pic-01.jpg')")
-            h3.index__right-title «Минск» не работает, нужно переходить к Будапештскому формату переговоров
+            .index__item-text
+              h3.index__right-title «Минск» не работает, нужно переходить к Будапештскому формату переговоров
             a(href="#").index__right-link
-          .index__right-item--1x1
+          .index__right-item--1x1.grey-border
             .index__item-pic(style="background-image: url('assets/img/pic-02.jpg')")
-            h3.index__right-title «Минск» не работает, нужно переходить к Будапештскому формату переговоров
+            .index__item-text
+              h3.index__right-title «Минск» не работает, нужно переходить к Будапештскому формату переговоров
             a(href="#").index__right-link
 
         .index__right-item
-          .index__right-item--1x2
+          .index__right-item--1x2.grey-border
             img(src="assets/img/news-book.jpg", alt="Книга")
             h3.index__right-title-lg &#171;Майбутнє починається сьогодні&#187;
             p.index__right-descr Презентация книги «Майбутрнє починається сьогодні» в Одессе - 15 мая, в Киеве 12 июня, в Днепре - 16 июня 

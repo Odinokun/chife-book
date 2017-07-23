@@ -40,6 +40,7 @@
   justify-content: center;
   align-items: flex-end;
   min-height: 480px;
+  cursor: pointer;
   transition: box-shadow .5s;
   background-repeat: no-repeat;
   background-position: 50% -50px;
@@ -97,7 +98,6 @@
   position: relative;
   transition: box-shadow .5s;
   text-align: center;
-  border: 1px solid #e6e6e6;
   border-bottom: 4px solid #974cad;
   &:hover {
     box-shadow: 0 2px 24px rgba(69, 17, 85, .3);
@@ -109,6 +109,7 @@
 .blog__right-item--1x1 {
   width: 100%;
   padding: 150px 10px 20px 10px;
+  background-color: #fff;
 }
 .blog__item-pic {
   position: absolute;
@@ -187,7 +188,9 @@
   font-family: $font-l-bold;
   font-size: 24px;
   line-height: 28px;
+  display: inline-block;
   margin-bottom: 10px;
+  text-decoration: none;
   color: #000;
 }
 .blog-bottom__text {

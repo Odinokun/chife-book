@@ -4,6 +4,7 @@
 .book__top-section {
   position: relative;
   display: flex;
+  justify-content: space-between;
   padding-bottom: 45px;
 
   @include max(970) {
@@ -32,6 +33,7 @@
 .book__top-section--left,
 .book__top-section--right {
   width: 50%;
+  max-width: 530px;
 
   @include max(970) {
     width: 100%;
@@ -73,11 +75,24 @@
   }
 }
 .book__top-section--right {
+  .send__form {
+    padding: 40px 35px;
+  }
   .send__field {
     max-width: 365px;
     margin-right: auto;
     margin-left: auto;
   }
+}
+.book__description {
+  margin-bottom: 30px;
+}
+.book__description-title {
+  font-family: $font-l-black;
+  font-size: 30px;
+  letter-spacing: -.1px;
+  color: #000;
+  margin-bottom: 20px;
 }
 .book__text-section {
   width: 100%;

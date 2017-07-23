@@ -9,6 +9,7 @@ block content
   
   //begin content
   section.main.connect
+    include ../elements/mobileLogo
     .connect__header(style="background-image: url('assets/img/connect-header.jpg');")
       include ../elements/pageHeaderCrop
       .connect__top-title--wrap
@@ -103,32 +104,33 @@ block content
             option Канада (+38)
           input(type="text" placeholder="Телефон").f-2
         
-        .connect__form-row-half.connect-row__title
+        .connect__form-row-half.connect-row__title.connect__form-row-half--full-select
           .connect-row__title-text Профессия
           select.selectmenu
             option Почтовый адрес 1
             option Почтовый адрес 2
             option Почтовый адрес 3
 
-        .checkbox
-          input(type="checkbox" id="agree" checked)
-          label(for="agree")
-            span
-              | Да я согласен с
-              =" "
-              a(href="#") правилами устава
-              =" "
-              |и на обработку персональных данных
+        .checkbox__wrap
+          .checkbox
+            input(type="checkbox" id="agree" checked)
+            label(for="agree")
+              span
+                | Да я согласен с
+                =" "
+                a(href="#") правилами устава
+                =" "
+                |и на обработку персональных данных
 
-        .checkbox
-          input(type="checkbox" id="spam")
-          label(for="spam")
-            span Получать новости на почту
+          .checkbox
+            input(type="checkbox" id="spam")
+            label(for="spam")
+              span Получать новости на почту
 
-        .checkbox
-          input(type="checkbox" id="r2d2")
-          label(for="r2d2")
-            span Я не робот
+          .checkbox
+            input(type="checkbox" id="r2d2")
+            label(for="r2d2")
+              span Я не робот
 
         input(type="submit" value="Отправить").connect-form__submit.popup-open
       

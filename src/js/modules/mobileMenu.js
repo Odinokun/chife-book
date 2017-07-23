@@ -3,7 +3,10 @@ module.exports = function() {
   // begin MOBILE MENU
   $('#burger label').on('click', function() {
     $('#menu').toggleClass('active');
-    // $('body').toggleClass('no-scroll');
+    //закрываем блок поиска
+    $('.header__search-close').fadeOut();
+    $('.header__search-open').fadeIn();
+    $('.header__search').fadeOut();
   });
   
   $('.menu__item').on('click', function() {
