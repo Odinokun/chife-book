@@ -116,10 +116,12 @@
   top: 0;
   right: 0;
   left: 0;
+  overflow: hidden;
   height: 130px;
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-size: cover;
+  img {
+    width: 100%;
+    min-height: 100%;
+  }
 }
 .blog__right-title {
   font-family: $font-l-bold;
@@ -160,20 +162,21 @@
   }
 }
 .blog-bottom__pic {
+  overflow: hidden;
   width: 255px;
-  min-height: 145px;
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  background-size: cover;
+  height: 145px;
+  background-color: #963;
 
   @include max(660) {
     float: left;
-    height: 145px;
     margin: 0 30px 10px 0;
   }
   @include max(480) {
     float: none;
     margin: 0 0 10px 0;
+  }
+  img {
+    width: 100%;
   }
 }
 .blog-bottom__right {

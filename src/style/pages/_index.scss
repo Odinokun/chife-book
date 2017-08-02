@@ -157,10 +157,12 @@
   top: 0;
   right: 0;
   left: 0;
+  overflow: hidden;
   height: 130px;
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-size: cover;
+  img {
+    width: 100%;
+    min-height: 130px;
+  }
 }
 .index__right-title {
   font-family: $font;
