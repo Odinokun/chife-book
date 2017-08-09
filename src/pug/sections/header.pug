@@ -12,7 +12,17 @@ header.header
           use(xlink:href="assets/img/sprite.svg#close")
 
     // begin смена языка
-    .header__lang
+    .header-lang
+      .header-lang__selected
+        span Укр
+      ul.header-lang__list
+        li.header-lang__item
+          a(href="#").header-lang__link.active Укр
+        li.header-lang__item
+          a(href="#").header-lang__link Рус
+        li.header-lang__item
+          a(href="#").header-lang__link Eng
+    //- .header__lang
       select.header__lang-select.selectmenu
         option(value="Укр") Укр
         option(value="Рус") Рус

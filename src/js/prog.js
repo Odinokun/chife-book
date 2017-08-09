@@ -46,12 +46,18 @@ $('.popup-open').on('click', function() {
 
 // begin popup close
 $('.popup__layer, .popup__close').on('click', function() {
-  $('.popup, .popup__layer').fadeOut();
+  $('.popup, .popup__layer, .popup-life').fadeOut();
 });
 // end   popup close
 
-// begin popup scroll
-// $(window).on('scroll', function() {
-//   $('.popup').css({'top': $(window).scrollTop() + 50});
-// }).scroll();
-// end   popup scroll
+// begin popup-life open
+$('.popup-life-open').on('click', function() {
+
+  var numb = $(this).data('popup');
+  var popup = $('.popup-life-' + numb);
+
+  $(popup).fadeIn();
+  $('.popup__layer').fadeIn();
+  return false;
+});
+// end   popup open

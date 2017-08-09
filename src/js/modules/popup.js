@@ -12,10 +12,4 @@ module.exports = function() {
   });
   // end   popup close
 
-  // begin popup scroll
-  // $(window).on('scroll', function() {
-  //   $('.popup').css({'top': $(window).scrollTop() + 50});
-  // }).scroll();
-  // end   popup scroll
-
 };

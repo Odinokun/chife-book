@@ -1,23 +1,22 @@
-.gallery {
+.gallery-page {
   background-color: #f0f0f0;
 }
 .gallery__wrap {
   display: flex;
   flex-wrap: wrap;
-    @include max(768) {
-      justify-content: space-between;
-    }
+
+  @include max(768) {
+    justify-content: space-between;
+  }
 }
-.gallery__item {
+.gallery-page figure {
+  position: relative;
+  overflow: hidden;
   width: 31.6%;
   height: 232px;
-  margin-right: 2.6%;
-  margin-bottom: 26px;
+  margin: 0 2.6% 26px 0;
   transition: box-shadow .5s;
   background-color: #d5dadb;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 
   @include max(768) {
     width: 48%;
@@ -25,6 +24,18 @@
   }
   @include max(480) {
     width: 100%;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+
+    object-fit: cover;
   }
   &:nth-child(3n) {
     margin-right: 0;

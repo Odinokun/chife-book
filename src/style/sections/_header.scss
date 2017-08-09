@@ -155,7 +155,7 @@
 // END поле поиска
 
 // BEGIN смена языка сайта
-.header__lang {
+.header-lang {
   position: absolute;
   z-index: 10;
   top: 100%;
@@ -163,29 +163,108 @@
   width: 78px;
   height: 43px;
   padding-top: 2px;
+  cursor: pointer;
+  color: #000;
+  border: none;
+  background-color: #efefef;
 
   @include max(560) {
     position: fixed;
     top: 0;
     right: 10px;
     display: block !important;
-    overflow: hidden;
     height: 40px;
     background-color: transparent;
   }
-  .ui-selectmenu-button.ui-button {
-    color: #000;
-    border: none;
-    background-color: #efefef;
-    &::before {
-      right: 15px;
-      width: 10px;
-      height: 0;
-      border-top: 6px solid #000;
-      border-right: 6px solid transparent;
-      border-left: 6px solid transparent;
-      background: none;
+  &:hover {
+    .header-lang__list {
+      transform: scale(1);
+      opacity: 1;
     }
   }
 }
+.header-lang__selected {
+  height: 43px;
+  padding-left: 20px;
+  span {
+    line-height: 43px;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 10px;
+    bottom: 0;
+    width: 10px;
+    height: 0;
+    margin: auto;
+    content: '';
+    border-top: 6px solid #000;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    background: none;
+  }
+}
+.header-lang__list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: all .5s;
+  transform: scale(0);
+  opacity: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 24px rgba(69,17,85,.3);
+}
+.header-lang__item {
+  padding: 0;
+}
+.header-lang__link {
+  display: block;
+  padding: 8px 25px;
+  transition: all .5s;
+  text-decoration: none;
+  color: #000;
+  &:hover,
+  &.active {
+    color: #fff;
+    background-color: #662479;
+  }
+}
+
+// .header__lang {
+//   position: absolute;
+//   z-index: 10;
+//   top: 100%;
+//   right: 5px;
+//   width: 78px;
+//   height: 43px;
+//   padding-top: 2px;
+
+//   @include max(560) {
+//     position: fixed;
+//     top: 0;
+//     right: 10px;
+//     display: block !important;
+//     overflow: hidden;
+//     height: 40px;
+//     background-color: transparent;
+//   }
+//   .ui-selectmenu-button.ui-button {
+//     color: #000;
+//     border: none;
+//     background-color: #efefef;
+//     &::before {
+//       right: 15px;
+//       width: 10px;
+//       height: 0;
+//       border-top: 6px solid #000;
+//       border-right: 6px solid transparent;
+//       border-left: 6px solid transparent;
+//       background: none;
+//     }
+//   }
+// }
 // END смена языка сайта
