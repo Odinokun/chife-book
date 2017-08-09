@@ -51,4 +51,8 @@ jQuery(document).ready(function($) {
   require('./modules/jqueryUI')();
   // end   jqueryUI
 
+  // begin tezis Filter
+  require('./modules/tezisFilter')();
+  // end   tezis Filter
+
 });

@@ -1,10 +1,11 @@
 .tezis-list {
+  min-height: calc(100vh - 272px);
   background-color: #f0f0f0;
 }
 .tezis-list__filter {
   display: flex;
-  margin-bottom: 15px;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 .tezis-list__filter-btn {
   font-family: $font-l;
@@ -18,13 +19,15 @@
   transition: all .5s;
   text-decoration: none;
   color: #fff;
+  border: none;
   border-radius: 3px;
   background-color: #cfcfcf;
+
   @include max(768) {
-    padding: 0 15px;
     font-size: 16px;
-    height: 40px;
     line-height: 40px;
+    height: 40px;
+    padding: 0 15px;
   }
   &:hover {
     color: #fff;
@@ -39,6 +42,7 @@
 .grid-sizer,
 .tezis-list__item {
   width: 22.9%;
+
   @include max(1090) {
     width: 31.4%;
   }
@@ -54,7 +58,7 @@
 }
 .tezis-list__item {
   margin-bottom: 30px;
-  border-bottom: 4px solid #974cad;
   padding: 25px;
+  border-bottom: 4px solid #974cad;
   background-color: #fff;
 }
