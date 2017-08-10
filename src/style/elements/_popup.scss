@@ -17,6 +17,9 @@
   left: 0;
   pointer-events: none;
 }
+.popup-life {
+  overflow-y: scroll;
+}
 .popup-life,
 .popup {
   position: absolute;
