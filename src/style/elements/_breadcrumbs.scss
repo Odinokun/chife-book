@@ -32,3 +32,16 @@
   text-decoration: none;
   color: #888;
 }
+.family,
+.connect {
+  .breadcrumbs__item {
+    &::after {
+      opacity: .7;
+      color: #fff;
+    }
+  }
+  .breadcrumbs__link {
+    opacity: .7;
+    color: #fff;
+  }
+}

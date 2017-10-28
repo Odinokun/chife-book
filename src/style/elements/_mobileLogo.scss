@@ -1,9 +1,10 @@
 .mobile__logo {
   display: none;
   margin-top: 40px;
-
-  @include max(560) {
-    display: block;
+  &.active {
+    @include max(560) {
+      display: block;
+    }
   }
   h1 {
     position: absolute;
@@ -12,10 +13,10 @@
   svg {
     display: block;
     overflow: visible;
-    fill: #662479;
     width: 90%;
     max-height: 70px;
     margin: 0 auto;
+    fill: #662479;
   }
 }
 .connect,

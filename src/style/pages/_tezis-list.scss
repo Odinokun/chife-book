@@ -61,4 +61,8 @@
   padding: 25px;
   border-bottom: 4px solid #974cad;
   background-color: #fff;
+  strong {
+    font-family: $font-l-bold;
+    font-weight: 400;
+  }
 }
