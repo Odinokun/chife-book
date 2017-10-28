@@ -61,17 +61,3 @@ $('.popup-life-open').on('click', function() {
   return false;
 });
 // end   popup open
-
-
-//begin logo change
-$('.header-lang__link').on('click', function () {
-
-  var lang = $(this).data('lang');
-
-  $('.menu__item--logo, .mobile__logo, .header-lang__link').removeClass('active');
-  $(this).addClass('active');
-  $('.menu__item--logo-' + lang).addClass('active');
-  $('.mobile__logo-' + lang).addClass('active');
-  return false;
-});
-//end logo change
